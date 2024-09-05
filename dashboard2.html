@@ -1,0 +1,315 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"></link>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .user-info img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .navbar .user-info span {
+            font-weight: 500;
+        }
+        .navbar .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .user-table th, .user-table td {
+            background-color: #f8d7da;
+        }
+        .test-table th, .test-table td {
+            background-color: #d1e7dd;
+        }
+        .job-table th, .job-table td {
+            background-color: #d1ecf1;
+        }
+        .action-button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer .section {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .footer h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .footer p {
+            font-size: 14px;
+        }
+        .footer .social-icons a {
+            margin-right: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .footer .contact-info p {
+            margin: 5px 0;
+        }
+        .footer .contact-info i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="user-info">
+            <img src="https://placehold.co/50x50" alt="Profile picture of Shahab Ali">
+            <span>Shahab Ali</span>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Career</a>
+            <a href="#">User</a>
+            <a href="#">Post new test</a>
+            <a href="#">Post new Job</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="section">
+            <h2>List of All Users</h2>
+            <div class="table-container">
+                <table class="user-table">
+                    <tr>
+                        <th>User name</th>
+                        <th>Profession</th>
+                        <th>Joining date</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>Shahab Ali</td>
+                        <td>lab technician</td>
+                        <td>July 31, 2024</td>
+                        <td><button class="action-button">Delete User</button></td>
+                    </tr>
+                    <tr>
+                        <td>Wajahat Ali</td>
+                        <td>civil engineer</td>
+                        <td>August 7, 2024</td>
+                        <td><button class="action-button">Delete User</button></td>
+                    </tr>
+                    <tr>
+                        <td>Tauseef Ahmed</td>
+                        <td>architect</td>
+                        <td>August 17, 2024</td>
+                        <td><button class="action-button">Delete User</button></td>
+                    </tr>
+                    <tr>
+                        <td>Shujaat Ali</td>
+                        <td>material engineer</td>
+                        <td>August 26, 2024</td>
+                        <td><button class="action-button">Delete User</button></td>
+                    </tr>
+                    <tr>
+                        <td>haji</td>
+                        <td>Surveyor</td>
+                        <td>August 26, 2024</td>
+                        <td><button class="action-button">Delete User</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="section">
+            <h2>List of All Tests</h2>
+            <div class="table-container">
+                <table class="test-table">
+                    <tr>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Posted by</th>
+                        <th>Posted at</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>Compressive strength test</td>
+                        <td>Cement</td>
+                        <td>Shahab Ali</td>
+                        <td>August 10, 2024</td>
+                        <td><button class="action-button">Delete Test</button></td>
+                    </tr>
+                    <tr>
+                        <td>Gradation of fine and coarse aggregate "Sieve analysis of aggregate"</td>
+                        <td>Aggregate</td>
+                        <td>Shahab Ali</td>
+                        <td>August 20, 2024</td>
+                        <td><button class="action-button">Delete Test</button></td>
+                    </tr>
+                    <tr>
+                        <td>Los Angeles Abrasion Test</td>
+                        <td>Aggregate</td>
+                        <td>Shahab Ali</td>
+                        <td>August 20, 2024</td>
+                        <td><button class="action-button">Delete Test</button></td>
+                    </tr>
+                    <tr>
+                        <td>Specific gravity of coarse aggregate</td>
+                        <td>Aggregate</td>
+                        <td>Shahab Ali</td>
+                        <td>August 20, 2024</td>
+                        <td><button class="action-button">Delete Test</button></td>
+                    </tr>
+                    <tr>
+                        <td>Slump Test</td>
+                        <td>Concrete</td>
+                        <td>Shahab Ali</td>
+                        <td>August 20, 2024</td>
+                        <td><button class="action-button">Delete Test</button></td>
+                    </tr>
+                    <tr>
+                        <td>Soundness test of aggregate</td>
+                        <td>Aggregate</td>
+                        <td>Shahab Ali</td>
+                        <td>August 24, 2024</td>
+                        <td><button class="action-button">Delete Test</button></td>
+                    </tr>
+                    <tr>
+                        <td>Flakiness & Elongation of Aggregate</td>
+                        <td>Aggregate</td>
+                        <td>Shahab Ali</td>
+                        <td>August 25, 2024</td>
+                        <td><button class="action-button">Delete Test</button></td>
+                    </tr>
+                    <tr>
+                        <td>Specific gravity and Absorption of fine aggregate</td>
+                        <td>Aggregate</td>
+                        <td>Shahab Ali</td>
+                        <td>August 26, 2024</td>
+                        <td><button class="action-button">Delete Test</button></td>
+                    </tr>
+                    <tr>
+                        <td>Crushing value of aggregate</td>
+                        <td>Aggregate</td>
+                        <td>Shahab Ali</td>
+                        <td>August 29, 2024</td>
+                        <td><button class="action-button">Delete Test</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="section">
+            <h2>List of All Jobs</h2>
+            <div class="table-container">
+                <table class="job-table">
+                    <tr>
+                        <th>Title</th>
+                        <th>Company</th>
+                        <th>Posted by</th>
+                        <th>Posted at</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>Civil Engineer</td>
+                        <td>LEVRAD GENERAL TRANSPORT</td>
+                        <td>Shahab Ali</td>
+                        <td>September 3, 2024</td>
+                        <td><button class="action-button">Delete Job</button></td>
+                    </tr>
+                    <tr>
+                        <td>QC Inspector</td>
+                        <td>Proficient</td>
+                        <td>Shahab Ali</td>
+                        <td>September 3, 2024</td>
+                        <td><button class="action-button">Delete Job</button></td>
+                    </tr>
+                    <tr>
+                        <td>Structural Design Engineer</td>
+                        <td>Maestro Steel Metal Works LLC</td>
+                        <td>Shahab Ali</td>
+                        <td>September 3, 2024</td>
+                        <td><button class="action-button">Delete Job</button></td>
+                    </tr>
+                    <tr>
+                        <td>Material Engineer</td>
+                        <td>Al Masaood National General Contracting</td>
+                        <td>Shahab Ali</td>
+                        <td>September 3, 2024</td>
+                        <td><button class="action-button">Delete Job</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="section about-us">
+            <h4>ABOUT US</h4>
+            <p>Welcome to the NAXAT, your one-stop shop for all things civil engineering. Connect with fellow professionals, share your lab test results, find your next career opportunity, and engage in insightful discussions.</p>
+            <p>We are dedicated to fostering a vibrant community where civil engineers can learn, grow, and contribute to the advancement of the field.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="section explore">
+            <h4>EXPLORE</h4>
+            <p><a href="#">Lab Tests</a></p>
+            <p><a href="#">Job Board</a></p>
+        </div>
+        <div class="section contact-us">
+            <h4>CONTACT US</h4>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Abu Dhabi</p>
+                <p><i class="fas fa-envelope"></i> naxat@fmail.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Copyright: Civil Engineering Hub</p>
+    </div>
+</body>
+</html>
